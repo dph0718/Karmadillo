@@ -1,0 +1,25 @@
+{
+  "name": "karmacredit",
+  "version": "1.0.0",
+  "description": "Karma actualized",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tspatek/KarmaCredit.git"
+  },
+  "author": "D Huffman, T Patek, J Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tspatek/KarmaCredit/issues"
+  },
+  "homepage": "https://github.com/tspatek/KarmaCredit#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.8"
+  }
+}
