@@ -1,0 +1,171 @@
+   html {
+       height: 100%;
+   }
+   
+   body{
+        background-image: url('../images/tileable_wood_texture.png');
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .meter-gauge {
+      /* content: ""; */
+      width: 400px;
+      height: 200px;
+      background-color: none;
+      background-image: url('../images/karmagaugeshadow.png');
+      background-size: 400px 200px;
+      margin: 10px 0 0 0;
+      z-index: 100;
+      /* border-top-left-radius: 300px;
+      border-top-right-radius: 300px; */
+    }
+
+    .needle {
+      content: "";
+      position: absolute;
+      margin-top: 35px;
+      margin-left: 185px;
+      border-right: 8px solid transparent;
+      border-left: 8px solid transparent;
+      border-bottom: 160px solid #1b2e27;
+      border-radius: 10px;
+      -webkit-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 98%;
+      transform-origin: 50% 95%;
+      transform: rotate(-90deg);
+      /* -webkit-animation: moveNeedle 8s; */
+      /* animation: moveNeedle 3s; */
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: 2;
+    }
+
+    /* @-webkit-keyframes moveNeedle {
+  0% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  30% {
+    -webkit-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
+  50% {
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+  }
+  80% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+} */
+
+    @keyframes moveNeedle {
+      0% {
+        transform: rotate(0deg);
+      }
+      10% {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+      }
+      30% {
+        -webkit-transform: rotate(70deg);
+        transform: rotate(70deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+
+    }
+
+    @keyframes shadowPulse {
+        0% {
+            box-shadow: 0px 0px 0px 0px white;
+        }
+    
+        100% {
+            box-shadow: 0px 0px 500px 0px white;
+        }
+    }
+    
+    .shadow-pulse {
+        animation-name: shadowPulse;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+    }
+
+
+    #myEventsBox, .buttonBox, #karmaMeterBox, .dashBtn{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 2% 2%;
+        padding: 2% 2%;
+        font-family: 'macondo swash caps';
+        width: 80%;
+        height:40%;
+    }
+    .buttonBox {
+        flex-direction: row;
+    }
+
+    #karmaJournal{
+        background-image: url("../images/journal3.png");
+        background-size: 100% 100%;
+    }
+    #findKarma{
+        background-image: url("../images/rug-red.png");
+        background-size: 100% 100%;
+    }
+
+    #spendKarma{
+        background-image: url("../images/rug-blue.png");
+        background-size: 100% 100%;
+    }
+
+    #karmaMeterBox{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .dashBtn{
+        content: "OOOO";
+        width: 20vw;
+        height: 13vw;
+        border: none;
+        font-size: 3vw;
+        font-size: 4vw;
+        color: black;
+        text-shadow: 0 0 0.5vw white;
+        text-align: center;
+        /* box-shadow: 4px 4px 3px rgb(95, 95, 95); */
+        font-weight: bold;
+    }
+
+    h2 {
+        font-family: 'molle';
+        padding: 10px;
+        margin: 0px;
+        font-size: 4vw;
+        color: rgb(0, 0, 0);
+        text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    #karmaScoreBoard *{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 400px;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+    }

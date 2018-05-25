@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Registration</title>
+</head>
+
+<body>
+    <h1>Create Your Event</h1>
+    <form>
+        <fieldset>
+            <legend>
+                Event Info
+            </legend> Event Title
+            <input type="text" id="title">
+            <br> Organization Name
+            <input type="text" id="organization">
+            <br> Event Description
+            <input type="text" id="event-description">
+            <br> Number of volunteers needed:
+            <input type="number" id="num-volunteers">
+
+            <fieldset>
+                <legend>When is the event?</legend>
+                Date
+                <input type="date" id="event-date">
+                <br> Start time:
+                <input type="time" id="event-time-start">
+                <br> End time:
+                <input type="text" id="event-time-end">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Where is the event? </legend>
+                Street Name &amp; Number
+                <input type="text" id="street" value="gorilla">
+                <br>Number
+                <input type="text" id="number" value="gorilla">
+                <br> City
+                <input type="text" id='city' value="giraffe">
+                <br> State
+                <input type="text" id='state' value="GO">
+                <br> Zip Code
+                <input type="text" id='zip code' value="gopher">
+
+            </fieldset>
+            <fieldset>
+                <legend> Contact Info
+                </legend>
+                Contact Name
+                <input type="text" id="contact-name" value="Karma Chameleon">
+                <br> Contact's Number
+                <input type="tel" id="contact-num" value="287-2398">
+                <br>
+            </fieldset>
+        </fieldset>
+        <button type='submit'>Submit</button>
+    </form>
+</body>
+
+</html>
